@@ -1,0 +1,132 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 4724 >>
+stream
+q 0.10 0.31 0.40 rg 0 758 612 34 re f Q
+BT /F2 10 Tf 1 g 1 0 0 1 51 770 Tm (SNACK COUNTER AUTOMATION) Tj ET
+BT /F1 8 Tf 1 g 1 0 0 1 399 770 Tm (DESIGN OVERVIEW  |  PAGE 1 OF 2) Tj ET
+BT /F2 20 Tf 0.08 g 1 0 0 1 51 725 Tm (A clear, practical refill workflow) Tj ET
+BT /F1 10 Tf 0.36 g 1 0 0 1 51 698 Tm (What the project does today, and where its boundaries are) Tj ET
+BT /F2 13 Tf 0.1 g 1 0 0 1 51 665 Tm (How the refill works) Tj ET
+q 0.93 0.96 0.97 rg 45 606 522 48 re f Q
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 60 647 Tm (This describes the working assignment project. Refill reports use its REST API. Chat and HR) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 60 633 Tm (are simulated; the app does not connect to company services or authenticate users.) Tj ET
+BT /F2 10.5 Tf 0.1 g 1 0 0 1 51 608 Tm (1. Report empty) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 594 Tm (An employee sends a request to POST /api/refills. The counter identifies the office and) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 580.8 Tm (currency. Duplicate active requests for the same counter are rejected.) Tj ET
+BT /F2 10.5 Tf 0.1 g 1 0 0 1 51 562.5999999999999 Tm (2. Offer the task) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 548.5999999999999 Tm (The service offers the refill to an eligible volunteer, favoring people with fewer recent) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 535.3999999999999 Tm (assignments. If nobody is available, the request stays open and the expiry job retries it.) Tj ET
+BT /F2 10.5 Tf 0.1 g 1 0 0 1 51 517.1999999999998 Tm (3. Accept and refill) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 503.1999999999998 Tm (One volunteer accepts and restocks the counter. Only that person can submit the purchase and) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 489.99999999999983 Tm (receipt, then mark the task complete. Acceptance starts a completion deadline. If it is missed,) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 476.79999999999984 Tm (the task expires and is offered to another eligible volunteer.) Tj ET
+BT /F2 10.5 Tf 0.1 g 1 0 0 1 51 458.59999999999985 Tm (4. Check budget and record purchase) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 444.59999999999985 Tm (The service checks the office budget and records the purchase in one transaction. The default) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 431.39999999999986 Tm (blocks over-budget purchases. An approval-required error can be configured, but there is no) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 418.1999999999999 Tm (manager approval workflow.) Tj ET
+BT /F2 10.5 Tf 0.1 g 1 0 0 1 51 399.9999999999999 Tm (5. Track reimbursement) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 385.9999999999999 Tm (The app submits a claim to mock HR. Submission, approval, rejection, and payment are separate) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 372.7999999999999 Tm (states. Failed submission can be retried. A paid claim is recorded as reimbursed.) Tj ET
+BT /F2 10.5 Tf 0.1 g 1 0 0 1 51 354.5999999999999 Tm (6. Report) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 340.5999999999999 Tm (Monthly reports show spending and reimbursement totals by office. NOK and INR remain separate;) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 64 327.3999999999999 Tm (no currency conversion is configured.) Tj ET
+BT /F2 13 Tf 0.1 g 1 0 0 1 51 304.19999999999993 Tm (Main parts and data) Tj ET
+BT /F2 11 Tf 0.1 g 1 0 0 1 53 286.19999999999993 Tm (-) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 286.19999999999993 Tm (REST API and domain services handle requests, refill state, volunteer selection, budgets,) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 272.69999999999993 Tm (purchases, reimbursements, and reports. SnackService connects the focused services.) Tj ET
+BT /F2 11 Tf 0.1 g 1 0 0 1 53 255.19999999999993 Tm (-) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 255.19999999999993 Tm (SQLite stores employees, offices, counters, volunteer availability and visit eligibility,) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 241.69999999999993 Tm (refill requests, assignment history and deadlines, purchases, reimbursement states, monthly) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 228.19999999999993 Tm (budgets, and reservations. Receipt images live on disk.) Tj ET
+BT /F2 11 Tf 0.1 g 1 0 0 1 53 210.69999999999993 Tm (-) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 210.69999999999993 Tm (The mock chat adapter records notifications in memory. The mock HR adapter stores claims in) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 197.19999999999993 Tm (memory and simulates approval and payment. A scheduled job expires overdue work and reassigns) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 183.69999999999993 Tm (it.) Tj ET
+q 0.75 G 51 39 m 561 39 l S Q
+BT /F1 8 Tf 0.42 g 1 0 0 1 51 25 Tm (Snack Counter Automation  |  Design document) Tj ET
+BT /F1 8 Tf 0.42 g 1 0 0 1 534 25 Tm (1 / 2) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4285 >>
+stream
+q 0.10 0.31 0.40 rg 0 758 612 34 re f Q
+BT /F2 10 Tf 1 g 1 0 0 1 51 770 Tm (SNACK COUNTER AUTOMATION) Tj ET
+BT /F1 8 Tf 1 g 1 0 0 1 399 770 Tm (DESIGN OVERVIEW  |  PAGE 2 OF 2) Tj ET
+BT /F2 13 Tf 0.1 g 1 0 0 1 51 720 Tm (How the design prevents common problems) Tj ET
+BT /F2 11 Tf 0.1 g 1 0 0 1 53 702 Tm (-) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 702 Tm (Refills left waiting: offers and accepted tasks have deadlines. The job expires overdue work,) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 688.5 Tm (retries open requests, and reassigns tasks when another volunteer is available.) Tj ET
+BT /F2 11 Tf 0.1 g 1 0 0 1 53 671 Tm (-) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 671 Tm (Two people buying for one refill: only the accepted volunteer can purchase. Transactions,) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 657.5 Tm (conditional updates, and database constraints prevent duplicate active assignments and) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 644 Tm (purchases.) Tj ET
+BT /F2 11 Tf 0.1 g 1 0 0 1 53 626.5 Tm (-) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 626.5 Tm (Uneven workload: volunteers are selected by least-recent assignment, with eligible first-time) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 613 Tm (volunteers preferred. Availability is checked both when offering and accepting a task.) Tj ET
+BT /F2 11 Tf 0.1 g 1 0 0 1 53 595.5 Tm (-) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 595.5 Tm (Unclear spending: purchases record amount, currency, date, description, and receipt. All) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 582 Tm (purchases count against the budget even if HR rejects reimbursement. Reports separate spending) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 568.5 Tm (from reimbursement status. A receipt does not prove what was eaten.) Tj ET
+BT /F2 13 Tf 0.1 g 1 0 0 1 51 546 Tm (Budgets and trade-offs) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 51 528 Tm (Oslo has a monthly budget of 6,000 NOK; Bengaluru has 15,000 INR. A purchase above the remaining) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 51 514 Tm (budget is blocked by default. There is no manager override flow. Reports keep currencies separate) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 51 500 Tm (until a reporting currency and exchange-rate source are chosen.) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 51 479 Tm (SQLite and one app process keep this assignment straightforward to run and test. A multi-instance) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 51 465 Tm (deployment would need a shared transactional database and operational coordination. Simulated) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 51 451 Tm (integrations let reviewers run the workflow without external accounts.) Tj ET
+BT /F2 13 Tf 0.1 g 1 0 0 1 51 425 Tm (How it is tested) Tj ET
+BT /F2 11 Tf 0.1 g 1 0 0 1 53 407 Tm (-) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 407 Tm (Automated tests cover concurrent accepts and purchases, accepted tasks that miss their) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 393.5 Tm (deadline, budget enforcement, separate NOK and INR totals, and retrying failed HR submissions) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 380 Tm (without duplicate claims.) Tj ET
+BT /F2 11 Tf 0.1 g 1 0 0 1 53 362.5 Tm (-) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 362.5 Tm (Run `npm test`. Tests use temporary SQLite databases and mock chat and HR adapters, so they) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 66 349 Tm (need no company accounts or external services.) Tj ET
+BT /F2 13 Tf 0.1 g 1 0 0 1 51 326.5 Tm (Deliberately out of scope) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 51 308.5 Tm (Authentication and authorization, real chat and HR connections, durable mock HR data, currency) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 51 294.5 Tm (conversion, inventory and consumption tracking, manager approval, and multi-instance job) Tj ET
+BT /F1 10.2 Tf 0.16 g 1 0 0 1 51 280.5 Tm (infrastructure. These need company-specific security and operational decisions.) Tj ET
+q 0.93 0.96 0.97 rg 45 226.5 522 37 re f Q
+BT /F1 9.5 Tf 0.2 g 1 0 0 1 60 253.5 Tm (For review: run `npm install`, then `npm test`. The automated tests use isolated databases and) Tj ET
+BT /F1 9.5 Tf 0.2 g 1 0 0 1 60 240.5 Tm (simulated integrations.) Tj ET
+q 0.75 G 51 39 m 561 39 l S Q
+BT /F1 8 Tf 0.42 g 1 0 0 1 51 25 Tm (Snack Counter Automation  |  Design document) Tj ET
+BT /F1 8 Tf 0.42 g 1 0 0 1 534 25 Tm (2 / 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000005042 00000 n 
+0000005178 00000 n 
+0000009515 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+9651
+%%EOF
